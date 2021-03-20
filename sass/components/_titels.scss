@@ -1,0 +1,12 @@
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+
+  .what-we-do &,
+  .clients & {
+    text-align: center;
+  }
+}

@@ -1,0 +1,40 @@
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    padding-bottom: 94px;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &-item-wrapper {
+      position: relative;
+    }
+
+    &-text {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 70px;
+
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      background-color: var(--secondary-overlay-color);
+      color: var(--the-lightest-color);
+    }
+  }
+}

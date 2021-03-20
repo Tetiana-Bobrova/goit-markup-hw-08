@@ -1,0 +1,145 @@
+.contacts-list {
+  display: none;
+}
+
+.email-link,
+.phone-link {
+  display: inline-block;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.167px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--transition-time) var(--time-function);
+
+  .footer &,
+  .footer & {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+    margin-left: auto;
+    list-style-type: none;
+  }
+
+  .email-link,
+  .phone-link {
+    .header &,
+    .header & {
+      display: flex;
+    }
+
+    .footer &,
+    .footer & {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--footer-contacts-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .header .email-link {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+
+  .header .phone-link {
+    padding-top: 5px;
+    padding-bottom: 21px;
+  }
+  .contacts-icon {
+    margin-right: 8px;
+
+    .email-link & {
+      width: 14px;
+      height: 10px;
+    }
+
+    .phone-link & {
+      width: 10px;
+      height: 14px;
+    }
+
+    fill: var(--secondary-color);
+    transition: fill var(--transition-time) var(--time-function);
+
+    .email-link:hover &,
+    .email-link:focus &,
+    .phone-link:hover &,
+    .phone-link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+  }
+
+  .contacts-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .email-link,
+  .phone-link {
+    font-size: 14px;
+    line-height: 1.142;
+
+    .header &,
+    .header & {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .contacts-icon {
+    margin-right: 10px;
+
+    .email-link & {
+      width: 16px;
+      height: 12px;
+    }
+
+    .phone-link & {
+      width: 10px;
+      height: 16px;
+    }
+
+    fill: var(--secondary-color);
+    transition: fill var(--transition-time) var(--time-function);
+
+    .email-link:hover &,
+    .email-link:focus &,
+    .phone-link:hover &,
+    .phone-link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
